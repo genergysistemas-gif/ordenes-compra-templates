@@ -84,6 +84,7 @@
     .materiales-table {
         width: 100%;
         border-collapse: collapse;
+        table-layout: fixed;
         margin-top: 5px;
     }
 
@@ -101,13 +102,15 @@
         font-size: 11px;
         padding: 5px 4px;
         vertical-align: top;
+        word-wrap: break-word;
     }
 
-    .col-cant   { width: 10%; text-align: center; }
-    .col-unidad { width: 10%; text-align: center; }
-    .col-desc   { width: 50%; text-align: left;   }
-    .col-precio { width: 15%; text-align: right;  }
-    .col-importe{ width: 15%; text-align: right;  }
+    .col-cant   { width: 8%;  text-align: center; }
+    .col-unidad { width: 9%;  text-align: center; }
+    .col-desc   { width: 43%; text-align: left;   }
+    .col-te     { width: 8%;  text-align: center; }
+    .col-precio { width: 16%; text-align: right;  }
+    .col-importe{ width: 16%; text-align: right;  }
 
     .totales-wrapper {
         width: 100%;
@@ -205,6 +208,7 @@
                 <th class="col-cant">Cant.</th>
                 <th class="col-unidad">Unidad</th>
                 <th class="col-desc">Descripción</th>
+                <th class="col-te">T.E.</th>
                 <th class="col-precio">Precio Unitario</th>
                 <th class="col-importe">Importe</th>
             </tr>
@@ -212,91 +216,102 @@
         <tbody>
             
 <tr>
-    <td>3</td>
-    <td>PIEZA</td>
-    <td>TUBO ST 2´´ E/V RYMCO</td>
-    <td style="text-align:right">$396.266</td>
-    <td style="text-align:right">$1,188.80</td>
+    <td class="col-cant">3</td>
+    <td class="col-unidad">PIEZA</td>
+    <td class="col-desc">TUBO ST 2´´ E/V RYMCO</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$396.266</td>
+    <td class="col-importe">$1,188.80</td>
 </tr>
 
 <tr>
-    <td>6</td>
-    <td>PIEZA</td>
-    <td>CONECTOR COMPRESION 2´´ [TC606]</td>
-    <td style="text-align:right">$118.3125</td>
-    <td style="text-align:right">$709.88</td>
+    <td class="col-cant">6</td>
+    <td class="col-unidad">PIEZA</td>
+    <td class="col-desc">CONECTOR COMPRESION 2´´ [TC606]</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$118.3125</td>
+    <td class="col-importe">$709.88</td>
 </tr>
 
 <tr>
-    <td>2</td>
-    <td>PIEZA</td>
-    <td>CONDULET TIPO LB 2´´ [LB-63]</td>
-    <td style="text-align:right">$318.775</td>
-    <td style="text-align:right">$637.55</td>
+    <td class="col-cant">2</td>
+    <td class="col-unidad">PIEZA</td>
+    <td class="col-desc">CONDULET TIPO LB 2´´ [LB-63]</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$318.775</td>
+    <td class="col-importe">$637.55</td>
 </tr>
 
 <tr>
-    <td>2</td>
-    <td>PIEZA</td>
-    <td>CODO ST 2´´ E/V</td>
-    <td style="text-align:right">$192.1985</td>
-    <td style="text-align:right">$384.40</td>
+    <td class="col-cant">2</td>
+    <td class="col-unidad">PIEZA</td>
+    <td class="col-desc">CODO ST 2´´ E/V</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$192.1985</td>
+    <td class="col-importe">$384.40</td>
 </tr>
 
 <tr>
-    <td>10</td>
-    <td>PIEZA</td>
-    <td>ABRAZADERA UNICANAL 2´´ [PS13002]</td>
-    <td style="text-align:right">$15.7375</td>
-    <td style="text-align:right">$157.38</td>
+    <td class="col-cant">10</td>
+    <td class="col-unidad">PIEZA</td>
+    <td class="col-desc">ABRAZADERA UNICANAL 2´´ [PS13002]</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$15.7375</td>
+    <td class="col-importe">$157.38</td>
 </tr>
 
 <tr>
-    <td>2</td>
-    <td>METR O</td>
-    <td>TUBO LIQUIDTIGHT 2´´ [30M]</td>
-    <td style="text-align:right">$133.6125</td>
-    <td style="text-align:right">$267.23</td>
+    <td class="col-cant">2</td>
+    <td class="col-unidad">METR O</td>
+    <td class="col-desc">TUBO LIQUIDTIGHT 2´´ [30M]</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$133.6125</td>
+    <td class="col-importe">$267.23</td>
 </tr>
 
 <tr>
-    <td>2</td>
-    <td>PIEZA</td>
-    <td>CONECTOR RECTO L.T. 2´´</td>
-    <td style="text-align:right">$191.2533</td>
-    <td style="text-align:right">$382.51</td>
+    <td class="col-cant">2</td>
+    <td class="col-unidad">PIEZA</td>
+    <td class="col-desc">CONECTOR RECTO L.T. 2´´</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$191.2533</td>
+    <td class="col-importe">$382.51</td>
 </tr>
 
 <tr>
-    <td>2</td>
-    <td>PIEZA</td>
-    <td>COPLE C/ROSCA 2´´</td>
-    <td style="text-align:right">$51.168</td>
-    <td style="text-align:right">$102.34</td>
+    <td class="col-cant">2</td>
+    <td class="col-unidad">PIEZA</td>
+    <td class="col-desc">COPLE C/ROSCA 2´´</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$51.168</td>
+    <td class="col-importe">$102.34</td>
 </tr>
 
 <tr>
-    <td>6</td>
-    <td>PIEZA</td>
-    <td>COPLE COMPRESION 2´´ [TC616]</td>
-    <td style="text-align:right">$106.26</td>
-    <td style="text-align:right">$637.56</td>
+    <td class="col-cant">6</td>
+    <td class="col-unidad">PIEZA</td>
+    <td class="col-desc">COPLE COMPRESION 2´´ [TC616]</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$106.26</td>
+    <td class="col-importe">$637.56</td>
 </tr>
 
 <tr>
-    <td>60</td>
-    <td>METR O</td>
-    <td>CABLE LS 2 GENERAL CABLE / CARRETE</td>
-    <td style="text-align:right">$141.5375</td>
-    <td style="text-align:right">$8,492.25</td>
+    <td class="col-cant">60</td>
+    <td class="col-unidad">METR O</td>
+    <td class="col-desc">CABLE LS 2 GENERAL CABLE / CARRETE</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$141.5375</td>
+    <td class="col-importe">$8,492.25</td>
 </tr>
 
 <tr>
-    <td>20</td>
-    <td>METR O</td>
-    <td>CABLE LS 6 VERDE INDIANA CTE</td>
-    <td style="text-align:right">$56.8125</td>
-    <td style="text-align:right">$1,136.25</td>
+    <td class="col-cant">20</td>
+    <td class="col-unidad">METR O</td>
+    <td class="col-desc">CABLE LS 6 VERDE INDIANA CTE</td>
+    <td class="col-te"></td>
+    <td class="col-precio">$56.8125</td>
+    <td class="col-importe">$1,136.25</td>
 </tr>
 
         </tbody>
